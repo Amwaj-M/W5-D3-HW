@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Store</title>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
+<!-- MDB -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
+<!-- start style -->
+<style>
+@media only screen and (max-width: 600px) {
+    .container span {
+    font-size:x-small;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container span {
+    font-size:2rem;
+    }
+}
+
+.card-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+</style>
+<!-- end style -->
+
+</head>
+<body>
+<!--start  Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4461/4461364.png?uid=R124265540&ga=GA1.1.445355362.1639164806&track=ais"
+            height="35"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="Home" class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a id="AR" class="nav-link" href="#"> Arabic </a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <!-- Notifications -->
+        <div class="dropdown">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!--end  Navbar -->
+  <!-- start container  -->
+<div class="container-fluid card-cont p-5">
+  <div class="card" style="background-color: #c9c9c90e; width: 60%;">
+    <div class="container text-center">
+        <table>  
+            <tr>
+              <td></td>
+              <td rowspan=2>        
+                <img id="img-w" src="smart-watch-black.jpg" class="card-img-top" alt="watch-black"/>
+              </td>
+            </tr>  
+            <tr>
+              <td colspan=2><span id="time" style="text-align: center;"></span></span></td>
+            </tr>  
+          </table>
+    </div>
+    <div class="card-body text-center">
+      <h3 id="card-title" class="card-title">New Smart Watch </h3>
+      <p id="card-text" class="card-text"> Choose the colour 
+        <div class="d-flex flex-column mb-3 justify-content-center  ">
+            <div id="black-w" class="p-2 "> <a id="black-text" href="#" style="color: black; font-size: large;"> Black </a> </div>
+            <div id="white-w" class="p-2 "><a id="white-text" href="#" style="color: rgb(186, 185, 185); font-size: large;"> White </a></div>
+            <div id="pink-w" class="p-2"><a id="pink-text" href="#" style="color:#ca8687 ; font-size: large;"> Pink</a></div>
+            <div id="gold-w" class="p-2 "><a id="gold-text" href="#" style="color:#daaf7d;  font-size: large;"> Gold</a></div>
+          </div>
+      </p>
+      <a id="button" href="#!" class="btn btn-light" style="border: 1px solid rgb(48, 47, 47);">add to cart</a>
+    </div>
+  </div>
+
+</div>
+<!-- end container -->
+
+<!-- start footer -->
+<footer class="bg-light text-center text-lg-start" style="overflow: hidden;">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); height: 14vh; ">
+      © 2023 <br><span id="footer-text"> by: Amwaj Mohammed </span> 
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- end footer -->
+</body>
+<script src="script.js"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+</html>
